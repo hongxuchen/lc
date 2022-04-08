@@ -1,5 +1,5 @@
 
-package t.s1;
+package u.t.s1;
 
 class Solution {
 

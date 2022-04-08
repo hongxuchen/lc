@@ -1,13 +1,7 @@
 package t.s3;
 
 class Solution {
-
-    public int getMinAmount(int[][] suppliers, int total) {
-
+    public int getMaxProductionNum(int[][] limit, int[] plan) {
         throw new IllegalArgumentException();
-
     }
-
-
-
 }

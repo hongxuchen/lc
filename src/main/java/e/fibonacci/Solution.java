@@ -1,4 +1,4 @@
-package p.fibonacci;
+package e.fibonacci;
 
 public class Solution {
 
