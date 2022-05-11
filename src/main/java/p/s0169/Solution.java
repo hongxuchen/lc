@@ -1,4 +1,4 @@
-package p.s169;
+package p.s0169;
 
 class Solution {
     public int majorityElement(int[] nums) {

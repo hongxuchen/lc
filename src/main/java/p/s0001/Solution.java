@@ -1,4 +1,4 @@
-package p.s001;
+package p.s0001;
 
 import java.util.Arrays;
 import java.util.HashMap;

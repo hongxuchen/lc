@@ -1,5 +1,5 @@
 
-package p.s053;
+package p.s0053;
 
 public class Solution {
     public int maxSubArray(int[] nums) {

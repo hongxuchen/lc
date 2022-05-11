@@ -1,4 +1,4 @@
-package p.s258;
+package p.s0258;
 
 public class Solution {
 

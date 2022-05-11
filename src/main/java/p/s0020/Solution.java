@@ -1,4 +1,4 @@
-package p.s020;
+package p.s0020;
 
 import java.util.HashMap;
 import java.util.Map;

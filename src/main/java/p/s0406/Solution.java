@@ -1,5 +1,5 @@
 
-package p.p406;
+package p.s0406;
 
 import java.util.ArrayList;
 import java.util.HashMap;
