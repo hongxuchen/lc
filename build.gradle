@@ -13,6 +13,13 @@ apply plugin: 'java'
 compileJava {options.encoding = "UTF-8"}
 compileTestJava {options.encoding = "UTF-8"}
 
+tasks.wrapper {
+    gradleVersion = "7.1.1"
+    // You can either download the binary-only version of Gradle (BIN) or
+    // the full version (with sources and documentation) of Gradle (ALL)
+    distributionType = Wrapper.DistributionType.BIN
+}
+
 dependencies {
     implementation 'org.jetbrains:annotations:20.1.0'
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
