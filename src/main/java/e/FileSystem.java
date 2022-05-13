@@ -106,5 +106,6 @@ public class FileSystem {
                 return mergeInfo.merged;
             }
         }
+        return -1;
     }
 }
