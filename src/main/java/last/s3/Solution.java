@@ -1,4 +1,4 @@
-package t.s3;
+package last.s3;
 
 class Solution {
     public int getMaxProductionNum(int[][] limit, int[] plan) {

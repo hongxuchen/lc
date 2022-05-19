@@ -1,4 +1,4 @@
-package t.s1;
+package last.s1;
 
 import java.util.*;
 

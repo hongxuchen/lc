@@ -10,11 +10,10 @@ import java.util.Set;
 import java.util.TreeSet;
 
 public class FileSystem {
-
     static class FileInfo {
-        int fileId;
-        int time;
-        TreeSet<Integer> remainingParts;
+        private final int fileId;
+        private final int time;
+        private final TreeSet<Integer> remainingParts;
 
         public FileInfo(int fileId, int time, int num) {
             this.fileId = fileId;
@@ -26,10 +25,14 @@ public class FileSystem {
         }
 
         @Override
-        public boolean equals(Object o) {
-            if (this == o) return true;
-            if (o == null || getClass() != o.getClass()) return false;
-            FileInfo fileInfo = (FileInfo) o;
+        public boolean equals(Object that) {
+            if (this == that) {
+                return true;
+            }
+            if (that == null || getClass() != that.getClass()) {
+                return false;
+            }
+            FileInfo fileInfo = (FileInfo) that;
             return fileId == fileInfo.fileId;
         }
 
@@ -40,8 +43,8 @@ public class FileSystem {
     }
 
     static class MergeInfo {
-        int time;
-        int merged;
+        private final int time;
+        private final int merged;
 
         public MergeInfo(int time, int merged) {
             this.time = time;

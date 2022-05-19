@@ -1,4 +1,4 @@
-package t.s2;
+package last.s2;
 
 import java.util.Arrays;
 import java.util.Map;
