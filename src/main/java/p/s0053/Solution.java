@@ -7,7 +7,11 @@ public class Solution {
         int res = temp;
 
         for (int i = 1; i < nums.length; i++) {
-            temp = Math.max(temp + nums[i], nums[i]);
+            if (temp < 0) {
+                temp = nums[i];
+            } else {
+                temp += nums[i];
+            }
             res = Math.max(res, temp);
         }
         return res;
