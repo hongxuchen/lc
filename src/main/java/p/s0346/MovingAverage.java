@@ -5,23 +5,23 @@ import java.util.Queue;
 
 class MovingAverage {
 
-    int size;
-    int curSum = 0;
-    Queue<Integer> queue = new LinkedList<>();
+    private int size;
+    private double sum;
+    private Queue<Integer> queue = new LinkedList<>();
 
     public MovingAverage(int size) {
         this.size = size;
+        this.sum = 0.0;
     }
 
     public double next(int val) {
+        sum += val;
         queue.offer(val);
-        int curSize = queue.size();
-        curSum += val;
-        if (curSize <= this.size) {
-            return 1.0d * curSum / curSize;
+        if (queue.size() > this.size) {
+            sum -= queue.poll();
+            return sum / this.size;
         } else {
-            curSum -= queue.poll();
-            return 1.0d * curSum / this.size;
+            return sum / queue.size();
         }
     }
 
